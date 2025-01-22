@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+.margin{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+  .displayflex{
+    display: flex;
+  }
+  .btn-primary{
+    background-color: orange;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 35px;
+    border-radius: 10px;
+  }
+
+  /* Navbar */
+
+  .logo{
+    justify-content: space-between;
+  }
+
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+  
+  .nav-links a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  #home{
+    font-size: 1.25rem;
+    color:orange ;
+  }
+ #about{
+    font-size: 1.25rem;
+    color: skyblue;
+ }
+ #faci{
+    font-size: 1.25rem;
+    color: #05D4DF;
+ }
+ #adm{
+    font-size: 1.25rem;
+    color: #5D58EF;
+ }
+.scl{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.menu-icon{
+    display: none;
+    width: 20px;;
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar, .nav-links, .btn-primary, .scl{
+      display: none;
+    }
+    .navbar, .menu-icon {
+      display: block;
+    }
+
+    .logo{
+        justify-content: space-between;
+        
+        
+    }
+
+    .margin{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}    
