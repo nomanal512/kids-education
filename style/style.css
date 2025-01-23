@@ -6,6 +6,17 @@
     font-weight: <weight>;
     font-style: normal;
   }
+
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFA500;
+    color: white; 
+    padding: 10px 0;
+    margin-top: 30px;
+  }
 .margin{
     margin-left: 120px;
     margin-right: 120px;
@@ -106,10 +117,11 @@ main{
     
 }
 .navbar-line {
-  height: 2px; /* Thickness of the line */
-  background-color: #FFA500; /* Orange color */
-  width: 100%; /* Full width */
+  height: 2px;
+  background-color: #1d1d1d;
+  width: 100%;
   margin-top: 20px;
+  margin-bottom: 30px;
   display: none;
 }
 /**banner**/
@@ -117,6 +129,7 @@ main{
 .banner{
     display: flex;
     justify-content: space-around;
+
 }
 main > section {
     margin-top: 0px;
@@ -126,7 +139,7 @@ main > section {
   }
 
   .img{
-max-width: 440px;
+max-width: 540px;
   }
   .banner-title{
     font-weight: bold;
@@ -321,6 +334,8 @@ max-width: 440px;
     font-weight: 700;
 
   }
+
+  /**foooter**/
 
 .footer{
   background-color: #01ACFD;
