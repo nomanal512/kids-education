@@ -10,8 +10,16 @@
     margin-left: 120px;
     margin-right: 120px;
 }
+main{
+  max-width: auto;
+  margin: 0 auto;
+}
   .displayflex{
     display: flex;
+  }
+
+  .gap{
+    gap: 20px;
   }
   .btn-primary{
     background-color: orange;
@@ -97,10 +105,18 @@
     width: 20px;;
     
 }
+.navbar-line {
+  height: 2px; /* Thickness of the line */
+  background-color: #FFA500; /* Orange color */
+  width: 100%; /* Full width */
+  margin-top: 20px;
+  display: none;
+}
 /**banner**/
 
 .banner{
     display: flex;
+    justify-content: space-around;
 }
 main > section {
     margin-top: 0px;
@@ -139,7 +155,7 @@ max-width: 440px;
   }
   .sc-card-3{
     padding: 15px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     margin-bottom: 20px;
     background: linear-gradient(135deg, #F2E8FF, white );
@@ -149,7 +165,7 @@ max-width: 440px;
 }
 .sc-card-2{
     padding: 15px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.12);
     border-radius: 8px;
     margin-bottom: 20px;
     background: linear-gradient(135deg, #FFF4DC, white );
@@ -158,7 +174,7 @@ max-width: 440px;
 }
 .sc-card-1{
     padding: 15px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
     background: linear-gradient(135deg, #DEF5FF, white );
@@ -207,9 +223,15 @@ max-width: 440px;
 
   .story{
     background-image: url(/assets/bg.png), linear-gradient(to bottom, white, #ffe3c8);;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-right: 0px;
+    padding-bottom: 50px;
+    align-items: center;
+    max-width: auto;
     
   }
+  
     
 
   .story-card-1{
@@ -221,7 +243,6 @@ max-width: 440px;
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-left: 120px;
     
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
 
@@ -266,6 +287,7 @@ max-width: 440px;
   }
   .story-container{
     display: flex;
+    justify-content: center;
   }
   .btn-st-2{
     border: none;
@@ -288,7 +310,10 @@ max-width: 440px;
 
   }
   .view{
+
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .st-title{
     text-align: center;
@@ -297,6 +322,51 @@ max-width: 440px;
 
   }
 
+.footer{
+  background-color: #01ACFD;
+
+}
+.foot{
+  display: flex;
+}
+
+.footer-content{
+  justify-content: space-around;
+  padding: 100px 100px 100px 100px;
+  display: flex;
+}
+.footer-logo{
+  height: 82px;
+  width: 81px;
+  margin-top: 20px;
+}
+.footer-title{
+  color: white;
+  font-size: 2rem;
+}
+.ti{
+  color: white;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+.para{
+  color: white;
+}
+
+
 
 
 
@@ -304,12 +374,19 @@ max-width: 440px;
 
 @media (max-width: 768px) {
 
-    .banner, .sc-content{
+    .banner, .sc-content, .footer-content{
         flex-direction: column;   
        
     }
+    .footer-section{
+      align-items: start;
+      margin-left: -50px;
+
+      
+    }
     .img{
         order: 1;
+        width: 100%;
     }
     .features{
         order: 2;
@@ -322,13 +399,14 @@ max-width: 440px;
     }
     .navbar, .nav-links, .btn-primary, .scl, .arr-btn, .story-card-1{
       display: none;
+      margin: none;
     }
-    .navbar, .menu-icon {
+    .navbar, .menu-icon, .navbar-line {
       display: block;
     }
 
     .logo{
-        justify-content: space-between;
+        justify-content: space-between;          
         
         
     }
@@ -337,31 +415,42 @@ max-width: 440px;
         margin-left: 20px;
         margin-right: 20px;
     }
-    .sc-card-1{
-        margin-left: 0px;
+    .sc-card-1, .sc-card-2, .sc-card-3{
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .sc-card-3{
-        margin-right: 0px;
-    }
+    
     .story-2{
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 0px;
-        justify-content: safe;
+      margin-right: 0px;
         
         
+    }
+    .story-container{
+      margin-left: 30px;
+      
+      justify-content: center;
     }
     .story-card-2{
-        width: 80%;
+        width: 90%;
         
         margin-bottom: 10px;
-        margin-left: 10px;
+        margin-left: 0px;
         margin-right: 0px;
         font-size: 0.75rem;
         padding: 0;
+  
     }
      .story-card-2 img{
         width: 100%;    
 }   
+.btn-st-3, .btn-st-2{
+  width: 70%;
+  padding: 5px;
+  margin-top: -500px;
+}
+
 .img img{
     width: 100%;
 }
