@@ -31,6 +31,17 @@
     padding: 10px 35px;
     border-radius: 10px;
   }
+  .btn-primary-3{
+    background-color: black;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 35px;
+    border-radius: 10px;   
+    margin-top: 50px;
+   
+  }
 
   .dark2{
     color: #424242;
@@ -115,13 +126,186 @@ max-width: 440px;
     color: skyblue;
   }
 
+  /**standard curriculam section**/
+
+  .sc-title{
+    
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .sc{
+    background-image: url(../assets/bg.png);
+  }
+  .sc-card-3{
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #F2E8FF, white );
+    justify-items: center;
+    margin-right:120px ;
+
+}
+.sc-card-2{
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #FFF4DC, white );
+    justify-items: center;
+
+}
+.sc-card-1{
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #DEF5FF, white );
+    justify-items: center;
+    margin-left: 120px;
+
+}
+.sc-content{
+    gap: 20px;
+}
+#btn-1{
+    border: none;
+    background: none;
+    color: #05D4DF;
+}
+#btn-2{
+    border: none;
+    background: none;
+    color: orange;
+}
+#btn-3{
+    border: none;
+    background: none;
+    color: purple;
+}
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  .arrow-btn:hover {
+    transform: scale(1.1);
+  }
+  .arr-btn{
+    justify-items: center;
+  }
+
+  /**our stories**/
+
+  .story{
+    background-image: url(/assets/bg.png), linear-gradient(to bottom, white, #ffe3c8);;
+    margin-top: 100px;
+    
+  }
+    
+
+  .story-card-1{
+    border: 1px;
+    width: 450px;
+    height: 565px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 120px;
+    
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+
+
+  }
+  .img-2{
+    max-width: 450px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .btn-st-1{
+    border: none;
+    background:#3CD8E8;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: -200px;
+    margin-top: -250px;
+}
+.story-card-2{
+    border: 1px;
+    width: 250px;
+    height: 270px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 20px;
+    
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+
+
+  }
+  .img-3{
+    max-width: 250px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .story-2{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 24px;
+  }
+  .story-container{
+    display: flex;
+  }
+  .btn-st-2{
+    border: none;
+    background:#95B226;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: -50px;
+    margin-top: -300px;
+
+  }
+  .btn-st-3{
+    border: none;
+    background:#5D58F0;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: -50px;
+    margin-top: -300px;
+
+  }
+  .view{
+    text-align: center;
+  }
+  .st-title{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+  }
+
+
+
 
 
 
 @media (max-width: 768px) {
 
-    .banner{
-        flex-direction: column;
+    .banner, .sc-content{
+        flex-direction: column;   
        
     }
     .img{
@@ -136,7 +320,7 @@ max-width: 440px;
     .banner-title{
         margin-top: 20px;
     }
-    .navbar, .nav-links, .btn-primary, .scl{
+    .navbar, .nav-links, .btn-primary, .scl, .arr-btn, .story-card-1{
       display: none;
     }
     .navbar, .menu-icon {
@@ -153,5 +337,30 @@ max-width: 440px;
         margin-left: 20px;
         margin-right: 20px;
     }
-
-}    
+    .sc-card-1{
+        margin-left: 0px;
+    }
+    .sc-card-3{
+        margin-right: 0px;
+    }
+    .story-2{
+        grid-template-columns: repeat(1fr);
+        gap: 0px;
+        justify-content: safe;
+        
+        
+    }
+    .story-card-2{
+        width: 90%;
+        
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .img-3{
+        width: 100%;    
+}   
+.img{
+    max-width: 80%;
+}
+} 
