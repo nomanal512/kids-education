@@ -351,16 +351,18 @@ max-width: 440px;
         
     }
     .story-card-2{
-        width: 90%;
+        width: 80%;
         
         margin-bottom: 10px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
+        font-size: 0.75rem;
+        padding: 0;
     }
-    .img-3{
+     .story-card-2 img{
         width: 100%;    
 }   
-.img{
-    max-width: 80%;
+.img img{
+    width: 100%;
 }
 } 
